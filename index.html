@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script> 
+    <title>BlackJack</title>
+
+</head>
+<body>
+    <h1>BLACKJACK</h1>
+
+    <div class="player1_Board">
+        <label>Player 1 : <span id="player1score"><span></label>
+    </div>
+
+   
+    <!--------------------------- player 1 div section ---------------------------------------->
+    <div class="player1">
+
+        <div id="div">
+            <div class="card" id="card1">
+                <p class="content" id="content_p1c1"></p>
+                <img  class="images" src="images/heart.png"  alt="">
+            </div>
+            <div class="card" id="card2">
+                <p class="content" id="content_p1c2"></p>
+                <img class="images" src="images/spades.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <button id="player1Hit" class="hit1" style="display: none;">PLAYER 1 HIT</button>
+
+    <div class="player2_Board">
+        <label>Player 2 : <span id="player2score"></span></label>
+    </div>
+
+
+
+    <!--------------------------- player 2 div section ---------------------------------------->
+    <div class="player2">
+            
+            <div id="div2">
+                <div class="card" id="card3">
+                    <p class="content" id="content_p2c1"></p>
+                    <img class="images" src="images/club.png" alt="">
+                </div>
+                <div class="card" id="card4">
+                    <p class="content" id="content_p2c2"></p>
+                    <img class="images" src="images/diamond.png" alt="">
+                </div>
+                <div id="hidden_card">
+
+                </div>
+            </div>
+
+    </div>
+
+    <button id="player2Hit" class="hit2" style="display: none;">PLAYER 2 HIT</button>
+
+
+    <!--------------------------- Buttons section ---------------------------------------->
+    <div class="buttons">
+        <button class="btn" id="button">START GAME</button>
+    
+        <button class="btn" id="stand">STAND</button>
+
+        <button class="btn" onclick="reset()">RESTART GAME</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
